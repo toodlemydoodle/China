@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>George's China Itinerary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff6b6b;
+      --secondary: #4ecdc4;
+      --bg-light: #fffaf0;
+      --bg-white: #ffffff;
+      --text: #333;
+      --muted: #888;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Fredoka One', cursive;
+      background: var(--bg-light);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: var(--bg-white);
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 30px;
+      animation: popIn 0.6s ease-out forwards;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--secondary);
+      margin-top: 30px;
+      border-bottom: 3px dashed #fdd;
+      padding-bottom: 6px;
+      position: relative;
+    }
+
+    .day-block {
+      margin-top: 10px;
+    }
+
+    .date {
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    ul {
+      list-style: '🎒 ' inside;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 50px;
+      color: var(--muted);
+    }
+
+    .panda {
+      position: absolute;
+      top: -40px;
+      right: -30px;
+      width: 80px;
+      animation: floatPanda 6s ease-in-out infinite;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes floatPanda {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .panda {
+        width: 60px;
+        top: -30px;
+        right: -20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="panda" src="https://em-content.zobj.net/source/apple/354/panda_1f43c.png" alt="Panda" />
+    <h1>George's China Itinerary</h1>
+
+    <h2>May 17 – Arrival</h2>
+    <div class="day-block">
+      <p><span class="date">7 PM</span> – Land in Hong Kong → Cross to Shenzhen</p>
+      <ul>
+        <li>Dinner and rest</li>
+      </ul>
+    </div>
+
+    <h2>May 18–20 – Shenzhen</h2>
+    <ul>
+      <li>Huaqiangbei, OCT Loft, Ping An Skydeck</li>
+      <li>Window of the World, Dameisha Beach</li>
+      <li>Cantonese food, street snacks</li>
+    </ul>
+
+    <h2>May 21–23 – Xiamen</h2>
+    <ul>
+      <li>Travel via high-speed rail (~4 hrs)</li>
+      <li>Gulangyu Island, Nanputuo Temple, Shapowei Art Zone</li>
+      <li>Optional Tulou day trip</li>
+    </ul>
+
+    <h2>May 24–28 – Sanming / Youxi/ FuZhou</h2>
+    <ul>
+      <li>Travel from Xiamen</li>
+      <li>Nature walks, Taining Danxia, reconnect time</li>
+    </ul>
+
+    <h2>May 29–June 3 – Xinjiang</h2>
+    <ul>
+      <li>Fly to Kashgar or Ürümqi</li>
+      <li>Kashgar Old Town, Id Kah Mosque, Karakul Lake</li>
+      <li>Ürümqi: Heavenly Lake</li>
+    </ul>
+
+    <h2>June 4–8 – Sichuan (Chengdu)</h2>
+    <ul>
+      <li>Fly to Chengdu</li>
+      <li>Panda Base, Jinli Street, tea houses</li>
+      <li>Optional: Leshan Buddha</li>
+    </ul>
+
+    <h2>June 9–11–Beijing</h2>
+    <ul>
+      <li>Train/Flight to Beijing</li>
+      <li>Great Wall, Forbidden City, 798 Art District</li>
+      <li>Houhai night walk, Peking duck</li>
+    </ul>
+
+    <h2>June 12 – Fly Out</h2>
+    <ul>
+      <li>Departure</li>
+    </ul>
+
+    <footer>
+      copyright 🐾 by George
+    </footer>
+  </div>
+
+  <script>
+  </script>
+</body>
+</html>
